@@ -294,7 +294,7 @@ Read Evaluate Print Loop
      print(k, '-', d[k])
      
      # use the 'items' method to get a collection of tuple representing each key-value pair. In this example, 'd.items()' 
-       returns a sequence of tuples and the 'for' loop processes each tuple.
+     # returns a sequence of tuples and the 'for' loop processes each tuple.
      d = {'a': 1, 'b': 2, 'c': 3}
      for k, v in d.items():  # unpacks the tuple into k and v
      print(k, '-', v)
