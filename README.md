@@ -272,5 +272,8 @@ Read Evaluate Print Loop
     #Unpack
     a, b = ftletters("cat") # c a
     ```
+    
+ ### Dictionary 
+    
 
     
