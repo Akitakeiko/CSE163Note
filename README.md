@@ -284,3 +284,21 @@ Read Evaluate Print Loop
     - `d.keys()` returns a collection of all the keys in `d`
     - `d.values()` returns a collection of all the values in `d`.
     - `d.items()` returns a collection of all (`key`, `value`) tuples in `d`
+ 
+ - Looping over a dictionary
+
+     ```python
+     d = {'a': 1, 'b': 2, 'c': 3}
+     for k in d.keys():
+     print(k, '-', d[k])
+     
+     # use the 'keys' method. The 'keys' method returns a collection (similar to a 'set') of all the keys in the 'dict'.
+     
+     d = {'a': 1, 'b': 2, 'c': 3}
+     for k, v in d.items():  # unpacks the tuple into k and v
+     print(k, '-', v)
+     
+     # use the 'items' method to get a collection of tuple representing each key-value pair. In this example, 'd.items()' returns a sequence of tuples and the 'for' loop                processes each tuple.
+     ```
+    
+    
