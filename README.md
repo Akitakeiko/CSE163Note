@@ -279,8 +279,8 @@ Read Evaluate Print Loop
 
  - **Dictionary Methods**
 
-  - `d = {'a': 1, 'b': 2}` creates a new, empty dictionary
-  - `d.pop(key)` removes `key` from `d`
-  - `d.keys()` returns a collection of all the keys in `d`
-  - `d.values()` returns a collection of all the values in `d`.
-  - `d.items()` returns a collection of all (`key`, `value`) tuples in `d`
+    - `d = {'a': 1, 'b': 2}` creates a new, empty dictionary
+    - `d.pop(key)` removes `key` from `d`
+    - `d.keys()` returns a collection of all the keys in `d`
+    - `d.values()` returns a collection of all the values in `d`.
+    - `d.items()` returns a collection of all (`key`, `value`) tuples in `d`
