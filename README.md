@@ -288,18 +288,18 @@ Read Evaluate Print Loop
  - Looping over a dictionary
 
      ```python
+     # use the 'keys' method. The 'keys' method returns a collection (similar to a 'set') of all the keys in the 'dict'.
+     
      d = {'a': 1, 'b': 2, 'c': 3}
      for k in d.keys():
      print(k, '-', d[k])
      
-     # use the 'keys' method. The 'keys' method returns a collection (similar to a 'set') of all the keys in the 'dict'.
+     # use the 'items' method to get a collection of tuple representing each key-value pair. In this example, 'd.items()' 
+     returns a sequence of tuples and the 'for' loop processes each tuple.
      
      d = {'a': 1, 'b': 2, 'c': 3}
      for k, v in d.items():  # unpacks the tuple into k and v
      print(k, '-', v)
-     
-     # use the 'items' method to get a collection of tuple representing each key-value pair. In this example, 'd.items()' 
-     returns a sequence of tuples and the 'for' loop processes each tuple.
      ```
      
  - 'enumerate' and 'zip'
