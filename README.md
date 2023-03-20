@@ -272,5 +272,62 @@ Read Evaluate Print Loop
     #Unpack
     a, b = ftletters("cat") # c a
     ```
-
     
+ ### Dictionary
+ 
+ - represented relationships between keys and values.
+
+ - **Dictionary Methods**
+
+    - `d = {'a': 1, 'b': 2}` creates a new, empty dictionary
+    - `d.pop(key)` removes `key` from `d`
+    - `d.keys()` returns a collection of all the keys in `d`
+    - `d.values()` returns a collection of all the values in `d`.
+    - `d.items()` returns a collection of all (`key`, `value`) tuples in `d`
+ 
+ - Looping over a dictionary
+
+     ```python
+     # use the 'keys' method. The 'keys' method returns a collection (similar to a 'set') of all the keys in the 'dict'.
+     d = {'a': 1, 'b': 2, 'c': 3}
+     for k in d.keys():
+     print(k, '-', d[k])
+     
+     # use the 'items' method to get a collection of tuple representing each key-value pair. In this example, 'd.items()' 
+     # returns a sequence of tuples and the 'for' loop processes each tuple.
+     d = {'a': 1, 'b': 2, 'c': 3}
+     for k, v in d.items():  # unpacks the tuple into k and v
+     print(k, '-', v)
+     ```
+     
+ - 'enumerate' and 'zip'
+   - 'enumerate' helps you loop over both the indices and elements of a sequence at the same time
+   - 'enumerate' takes a sequence, such as a list, and returns another sequence of 2-element tuples containing the index 
+      and the element itself.
+      
+      ```python
+      squares = [i ** 2 for i in range(1, 11)]
+
+      for i in range(len(squares)):
+      n = squares[i]
+      print(i, n)
+
+      for i, n in enumerate(squares):
+      print(i, n)
+      ```
+      
+   - 'zip' helps you loop over multiple sequences at the same time.
+   - 'zip' takes one or more sequences and returns the zipped sequence.
+   - If the sequences are not all the same length, 'zip' stops after yielding all elements from the shortest sequence.
+
+      ```python
+      numbers = [i for i in range(1, 11)]
+      squares = [i ** 2 for i in range(1, 11)]
+      cubes = [i ** 3 for i in range(1, 11)]
+
+      for i in range(len(numbers)):
+      print(numbers[i], squares[i], cubes[i])
+
+      for n, s, c in zip(numbers, squares, cubes):
+      print(n, s, c)
+      ```
